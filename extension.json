@@ -1,0 +1,26 @@
+{
+  "name"             : "HtPassword" ,
+  "author"           : "Vladimir Lin" ,
+  "url"              : "https://wiki.astrophysics.tw/wiki/Extension:HtPassword" ,
+  "description"      : "This extension edit htpasswd for a web site" ,
+  "version"          : "0.01" ,
+  "license-name"     : "GPL-2.0+" ,
+  "type"             : "parserhook" ,
+  "manifest_version" : 1 ,
+  "AutoloadClasses"  : { "HtPassword": "Passwords.php" },
+  "MessagesDirs"     : { "HtPassword": "i18n" },
+  "Hooks"            : { "ParserFirstCallInit": "HtPassword::setHooks"} ,
+  "ExtensionMessagesFiles": {
+    "HtPasswordExtensionMagic": "Magic.php"
+  } ,
+  "ResourceModules"  : {
+    "ext.HtPassword"  : {
+      "targets" : [ "desktop", "mobile" ],
+      "scripts" : [ "HtPassword.js" ]
+    }
+  } ,
+  "ResourceFileModulePaths": {
+    "localBasePath" : "modules",
+    "remoteExtPath" : "HtPassword/modules"
+  }
+}

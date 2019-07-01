@@ -1,0 +1,36 @@
+<table width="$(PASSWORD-WIDTH)" id="PasswordTable"><tbody>
+<tr><td nowrap="nowrap" colspan="2" id="HtPasswordTitle">新增登入帳號</td></tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td colspan="2">
+<table width="100%"><tbody>
+<tr>
+<td nowrap="nowrap" width="1%">帳號：</td>
+<td><input type="text" id="htaccount" name="htaccount" class="NameInput" placeholder="用戶帳號名稱"></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="1%">密碼：</td>
+<td><input type="password" id="htpasswd" name="htpasswd" class="NameInput" placeholder="帳號密碼"></td>
+</tr>
+<td nowrap="nowrap" width="1%">密碼確認：</td>
+<td><input type="password" id="htagain" name="htagain" class="NameInput" placeholder="再輸入一次密碼"></td>
+</tr>
+<tr>
+<td nowrap="nowrap" colspan="2">
+<button onclick="AppendHtUser()">新增帳號</button></td>
+</td>
+</tr>
+</tbody></table>
+</td></tr>
+</tr>
+<tr><td colspan="2">
+<input type="hidden" id="htroot" name="htroot" value="$(PASSWORD-ROOT)">
+<input type="hidden" id="htlang" name="htlang" value="$(PASSWORD-LANGUAGE)">
+<input type="hidden" id="htfile" name="htfile" value="$(PASSWORD-FILE)">
+<input type="hidden" id="htwidth" name="htwidth" value="$(PASSWORD-WIDTH)">
+<input type="hidden" id="htappend" name="htappend" value="$(PASSWORD-APPEND)">
+<input type="hidden" id="htdelete" name="htdelete" value="$(PASSWORD-DELETE)">
+</td></tr>
+$(ACCOUNT-LISTINGS)
+</tbody></table>
+<div id="HiddenAccount" style="display:none">帳號列表</div>
+<script>AssignAccountTitle ( )</script>

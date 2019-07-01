@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="HtPassword.css"
+      media="screen">
+    <title>HtPassword - a MediaWiki:Extension for accessing Apache
+      .htpasswd file</title>
+  </head>
+  <body>
+    <table width="100%">
+      <tbody>
+        <tr>
+          <td id="HtPasswordTitle">HtPassword - a MediaWiki:Extension
+            for accessing Apache .htpasswd file</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>URL : <a
+              href="https://github.com/Vladimir-Lin/HtPassword">https://github.com/Vladimir-Lin/HtPassword</a></td>
+        </tr>
+        <tr>
+          <td><br>
+          </td>
+        </tr>
+        <tr>
+          <td>In /mediawiki/extensions directory, git <a
+              href="https://github.com/Vladimir-Lin/HtPassword">https://github.com/Vladimir-Lin/HtPassword</a></td>
+        </tr>
+        <tr>
+          <td><br>
+          </td>
+        </tr>
+        <tr>
+          <td>In /mediawiki/extensions/HtPassword directory<br>
+          </td>
+        </tr>
+        <tr>
+          <td>config.php</td>
+        </tr>
+        <tr>
+          <td>Modify<br>
+          </td>
+        </tr>
+        <tr>
+          <td>$wgHtPassword<span style=" color:#c0c0c0;"> </span>=<span
+              style=" color:#c0c0c0;"> </span>"D:\\Programs\\XAMPP\\apache\\bin\\htpasswd.exe"<span
+              style=" color:#c0c0c0;"> </span>;</td>
+        </tr>
+        <tr>
+          <td><br>
+          </td>
+        </tr>
+        <tr>
+          <td><br>
+          </td>
+        </tr>
+        <tr>
+          <td>LocalSettings.php<br>
+          </td>
+        </tr>
+        <tr>
+          <td><br>
+          </td>
+        </tr>
+        <tr>
+          <td>add wfLoadExtension (<span style=" color:#c0c0c0;"> </span>'HtPassword'<span
+              style=" color:#c0c0c0;"> </span>) ;<br>
+          </td>
+        </tr>
+        <tr>
+          <td><br>
+          </td>
+        </tr>
+        <tr>
+          <td>Edit<br>
+          </td>
+        </tr>
+        <tr>
+          <td>{{ #HtPassword: /htpasswd | zh-TW | 25% | Yes | Yes }}<br>
+          </td>
+        </tr>
+        <tr>
+          <td>Syntax: {{ #HtPassword: htpasswd_file | language | width | Yes | canDelete }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
