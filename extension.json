@@ -1,7 +1,7 @@
 {
   "name"             : "HtPassword" ,
   "author"           : "Vladimir Lin" ,
-  "url"              : "https://wiki.astrophysics.tw/wiki/Extension:HtPassword" ,
+  "url"              : "https://github.com/Vladimir-Lin/HtPassword" ,
   "description"      : "This extension edit htpasswd for a web site" ,
   "version"          : "0.01" ,
   "license-name"     : "GPL-2.0+" ,
